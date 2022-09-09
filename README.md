@@ -22,15 +22,17 @@ DAM is a single-page website that links motorist with car problems to their desi
 
 ## Dial A Mechanic API Repo
 
-- [DAM Repo Link](https://github.com/BrianWangila/Dial-A-Mechanic-API)
+- [DAM Repo Link](https://github.com/BrianWangila/Dial-A-Mechanic_SINATRA-backend)
 
 # Description
-Let us get a deep dive into how to configure routing in REACT.
+Let us get a deep dive into how to configure routing in SINATRA Ruby.
+
 # Getting Started
 In order for you to use the content on this repo, ensure you have the following:
 
 - A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
 - nodejs 9.0+
+- RVM installed
 - Some bit of patience for your own sanity.
 
 ## Installation
@@ -42,12 +44,12 @@ To use this repo on your machine requires some simple steps
 - Open a terminal / command line interface on your computer
 - Clone the repo by using the following:
 
-        git clone git@github.com:BrianWangila/Dial-A-Mechanic.git
+        git clone git@github.com:BrianWangila/Dial-A-Mechanic_SINATRA-backend.git 
 
 - Be patient as it creates a copy on your local machine for you.
 - Change directory to the repo folder:
 
-        cd Dial-A-Mechanic
+        cd DAM-Sinatra-server
 
 - (Optional) Open it in ``Visual Studio Code``
 
@@ -74,16 +76,20 @@ To use this repo on your machine requires some simple steps
 
 Running the application is very straight forward. You can use the following steps to run the app.
 
-- Install required dependencies from npm
+- Install required dependencies from rvm
 
-      npm install
+      bundle install
 
-- Run the application on the browser
+- Run the application to start the backed server
 
-      npm start
+      bundle exec rake server    
+
+        OR
+
+      rake server
 
 # Authors
-This project was contributed to by:
+This project was created and contributed to by:
 - [Brian Wangila](https://github.com/BrianWangila/)
 
 # License
