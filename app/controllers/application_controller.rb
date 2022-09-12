@@ -7,6 +7,11 @@ class ApplicationController < Sinatra::Base
     mechanic.to_json(include: :reviews)
   end
 
+  get '/reviews' do
+    reviews = Review.all
+    reviews.to_json
+  end
+
   get '/mechanics/:id' do
     mechanic = Mechanic.find(params[:id])
     mechanic.to_json(include: :reviews)
