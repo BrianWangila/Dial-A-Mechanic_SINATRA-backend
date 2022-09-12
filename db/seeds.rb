@@ -1,3 +1,5 @@
+require 'Faker'
+
 puts "🌱 Seeding data..."
 
 mechanics = Mechanic.create([
@@ -6,7 +8,7 @@ mechanics = Mechanic.create([
       shop_name: "Okush Mechanic Shop",
       location: "Nakuru, Kenya",
       experience: 6,
-      about: faker::Lorem.sentence(word_count: rand(20..50)),
+      about: Faker::Lorem.sentence(word_count: rand(20..50)),
       image_url: "https://media.istockphoto.com/photos/happy-black-auto-mechanic-working-at-car-workshop-and-looking-at-picture-id1289143731?k=20&m=1289143731&s=612x612&w=0&h=12DezHaSI7XrRudm4Exd5aDyidgB0k9-worzo5u8viw=",
       mechanic_name: "Moses Okumu",
       number: "+254723456789",
@@ -17,7 +19,7 @@ mechanics = Mechanic.create([
       shop_name: "Melvin's Auto Shop",
       location: "Nairobi, Kenya",
       experience: 7,
-      about: faker::Lorem.sentence(word_count: rand(20..50)),
+      about: Faker::Lorem.sentence(word_count: rand(20..50)),
       image_url: "https://upload.wikimedia.org/wikipedia/commons/6/68/Auto_Mechanic.jpg",
       mechanic_name: "Melvin Mogaka",
       number: "+254734567891",
@@ -28,7 +30,7 @@ mechanics = Mechanic.create([
       shop_name: "Stephen Car Electrical",
       location: "Eldoret, Kenya",
       experience: 3,
-      about: faker::Lorem.sentence(word_count: rand(20..50)),
+      about: Faker::Lorem.sentence(word_count: rand(20..50)),
       image_url: "https://www.floridacareercollege.edu/wp-content/uploads/sites/4/2020/06/3-Reasons-Why-Being-a-Mechanic-Could-Be-An-Amazing-Career-Florida-Career-College.jpeg",
       mechanic_name: "Stephen Kariuki",
       number: "+254756789123",
@@ -39,7 +41,7 @@ mechanics = Mechanic.create([
       shop_name: "Milly's Spares",
       location: "Bungoma, Kenya",
       experience: 2.5,
-      about: faker::Lorem.sentence(word_count: rand(20..50)),
+      about: Faker::Lorem.sentence(word_count: rand(20..50)),
       image_url: "https://www.bls.gov/ooh/images/3010.jpg",
       mechanic_name: "Mildred Nafula",
       number: "+254745678912",
@@ -52,7 +54,7 @@ mechanics = Mechanic.create([
       number: "724941205",
       mechanic_name: "Brian Wangila",
       email: "brian@gmail.coo",
-      about: faker::Lorem.sentence(word_count: rand(20..50)),
+      about: Faker::Lorem.sentence(word_count: rand(20..50)),
       experience: "4",
       location: "Thika Road, Nairobi"
     },
@@ -63,7 +65,7 @@ mechanics = Mechanic.create([
       number: "724941205",
       mechanic_name: "Brian Wangila",
       email: "brian@gmail.coo",
-      about: faker::Lorem.sentence(word_count: rand(20..50)),
+      about: Faker::Lorem.sentence(word_count: rand(20..50)),
       experience: "4",
       location: "Thika Road, Nairobi"
     }
@@ -77,8 +79,8 @@ mechanics.map do |mechanic|
   
   Review.create(
     rating: rand(1..5).to_f,
-    name: faker::Name.first_name,
-    comment: faker::Company.catch_phrase,
+    name: Faker::Name.first_name,
+    comment: Faker::Company.catch_phrase,
     mechanic_id: mechanic.id
   )
   end
