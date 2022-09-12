@@ -30,4 +30,3 @@ production:
   database: production
   host: <%= ENV['DATABASE_HOST'] %>
   pool: 5
-
