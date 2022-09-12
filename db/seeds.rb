@@ -1,4 +1,4 @@
-require 'Faker'
+# require 'Faker'
 
 puts "🌱 Seeding data..."
 
