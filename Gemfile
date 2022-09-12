@@ -105,11 +105,11 @@ gem "require_all", "~> 3.0"
 # # Require all files in a folder
 # gem "shotgun"
 
-
+  gem "faker", "~> 2.18"
 # These gems will only be used when we are running the application locally
 group :development do
   gem "pry", "~> 0.14.1"
-  gem "faker", "~> 2.18"
+
 
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
@@ -126,6 +126,5 @@ end
 
 group :production do
   gem 'pg', '~> 1.4', '>= 1.4.3'
-  gem "faker", "~> 2.18"
 
 end
