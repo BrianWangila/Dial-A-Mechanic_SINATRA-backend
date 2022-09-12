@@ -18,7 +18,7 @@ DAM is a single-page website that links motorist with car problems to their desi
 # Getting Started with DIAL A MECHANIC (with SINATRA)
 
 ## Live Link
-- Click [Here](https://brianwangila.github.io/Dial-A-Mechanic/) to access the live API.
+- Click [Here](https://dial-a-mechanic-backend.herokuapp.com/mechanics/) to access the live API.
 
 ## Dial A Mechanic API Repo
 
