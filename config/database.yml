@@ -17,6 +17,13 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# development:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: development
+#   pool: development
+#   pool: 2
+
 production:
   adapter: postgresql
   encoding: unicode
