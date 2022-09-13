@@ -18,7 +18,7 @@ DAM is a single-page website that links motorist with car problems to their desi
 # Getting Started with DIAL A MECHANIC (with SINATRA)
 
 ## API Live Link
-- Click [Here to access DAM webpage](https://sea-lion-app-xkrg8.ondigitalocean.app/)
+- Click [Here https://sea-lion-app-xkrg8.ondigitalocean.app/ to access DAM webpage](https://sea-lion-app-xkrg8.ondigitalocean.app/)
 
 - Access the frontend webpage:
 
